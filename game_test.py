@@ -53,5 +53,6 @@ class TestFizzBuzzClass:
     def test_count_fizz_when_input_is_15(self):
         assert fizzbuzz(15) == "FizzBuzz"
 
-
+def leapyear(input):
+    pass
         
