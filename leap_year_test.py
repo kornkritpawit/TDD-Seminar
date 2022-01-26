@@ -9,3 +9,6 @@ def leap_year(year):
 class TestLeapYearClass:
     def test_true_when_input_is_2000(self):
         assert leap_year(2000) is True
+
+    def test_false_when_input_is_1900(self):
+        assert leap_year(2000) is False
