@@ -4,4 +4,9 @@ class LeapYear:
 
     def is_leap_year(self):
         if self.year % 100 == 0:
-            return 'century year'
+            if self.year % 400 == 0:
+                return 'leap year'
+            else:
+                return 'century year'
+        elif self.year % 4 == 0:
+            return 'leap year'
