@@ -7,8 +7,14 @@ def leap_year(year):
 
 
 class TestLeapYearClass:
-    def test_true_when_input_is_2000(self):
-        assert leap_year(2000) is True
+    def test_century_year_when_input_is_1900(self):
+        assert leap_year(1900) == 'century year'
 
-    def test_false_when_input_is_1900(self):
-        assert leap_year(2000) is False
+    def test_leap_year_when_input_is_2000(self):
+        assert leap_year(2000) == 'leap year'
+
+    def test_leap_year_when_input_is_1996(self):
+        assert leap_year(1996) == 'leap year'
+    
+    def test_leap_year_when_input_is_1997(self):
+        assert leap_year(1997) == 'not leap year'
