@@ -10,3 +10,5 @@ class LeapYear:
                 return 'century year'
         elif self.year % 4 == 0:
             return 'leap year'
+        else:
+            return 'not leap year'
